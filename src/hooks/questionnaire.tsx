@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-interface IQuestionaire {
+interface IQuestionnaire {
     handleSetExperienceTypes: (value: string) => void;
     handleSetRange: (value: string) => void;
     reset: () => void;
@@ -8,7 +8,7 @@ interface IQuestionaire {
     selectedExperience: string[];
 }
 
-function useQuestionnaire(): IQuestionaire {
+function useQuestionnaire(): IQuestionnaire {
     const [selectedExperience, setExperience] = useState<string[]>([]);
     const [range, setRange] = useState<[number,number]>([0,0]);
 
