@@ -17,7 +17,7 @@ function App() {
           <Checkbox checked={selectedExperience.includes("None")} label="None" value="None" handleChange={(e) => handleSetExperienceTypes(e.target.value)} />
         </div>
         <span className="question">How much overall experience do you have?</span>
-        <select className="experienceDropdown" name="experienceDropdown" disabled={!selectedExperience.length} id="cars" onChange={(e) => handleSetRange(e.target.value)}>
+        <select className="experienceDropdown" name="experienceDropdown" disabled={!selectedExperience.length} id="expDropdown" onChange={(e) => handleSetRange(e.target.value)}>
           <option value="0,1">0-1</option>
           <option value="1,2">1-2</option>
           <option value="3,-1">3 or more</option>
