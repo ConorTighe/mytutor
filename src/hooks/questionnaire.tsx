@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 
-function useQuestionnaire() {
+interface iQuestionaire {
+    handleSetExperienceTypes: (value: string) => void;
+    handleSetRange: (value: string) => void;
+    reset: () => void;
+    submit: () => void;
+    selectedExperience: string[];
+}
+
+function useQuestionnaire(): iQuestionaire {
     const [selectedExperience, setExperience] = useState<string[]>([]);
     const [range, setRange] = useState<[number,number]>([0,0]);
 

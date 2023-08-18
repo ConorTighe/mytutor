@@ -8,6 +8,7 @@ function App() {
 
   return (
     <div className="App">
+        <h1>MyTutor</h1>
         <span className="question">What kind of tutoring experience do you have?</span>
         <div className='checkboxes'>
           <Checkbox checked={selectedExperience.includes("Online")} label="Online tutoring" value="Online" handleChange={(e) => handleSetExperienceTypes(e.target.value)} />
